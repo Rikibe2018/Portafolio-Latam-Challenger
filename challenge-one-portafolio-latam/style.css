@@ -135,7 +135,13 @@ section.title {
     justify-content: space-around;
     padding: 0%;
 }
-
+.title__button__Download__Cv{
+    padding: 7px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(102, 102, 212);
+    border: none;
+}
 
 /*Sección About*/
 

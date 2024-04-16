@@ -3,6 +3,7 @@ const inputs = document.querySelectorAll("input");
 const textareas = document.querySelectorAll("textarea");
 const form = document.getElementById("form");
 const button_submit = document.getElementById('button_submit');
+const button_view_Cv = document.querySelector(".title__button__Download__Cv");
 
 const expresiones = {
     asunto: /^[a-zA-Z0-9\_\-]/, // Letras, numeros, guion y guion_bajo
@@ -180,5 +181,12 @@ textareas.forEach((textarea) => {
 });
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    //e.preventDefault();
+    form.reset();
+    alert('Formulario Enviado');
 });
+
+button_view_Cv.addEventListener("click", () => {
+    window.open('./assets/Cv Ricardo Benitez.pdf');
+});
+
